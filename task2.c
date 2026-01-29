@@ -1,6 +1,6 @@
 /*
 ===========================================================
- CODTECH Internship Task-2 (Advanced Level)
+ CODTECH Internship Task-2  
  Singly Linked List Implementation in C
 
  Features:
@@ -383,3 +383,4 @@ int main() {
 
     return 0;
 }
+
