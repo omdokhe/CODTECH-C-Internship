@@ -1,8 +1,8 @@
 /*
 =========================================================
-   CODTECH Internship Task-4 (PRO)
+   CODTECH Internship Task-4  
    Data Compression Tool using RLE Algorithm
-   Author: Om (Intern)
+   Author: Om  
    Language: C
 =========================================================
 
@@ -145,3 +145,4 @@ void decompressFile(const char *inputFile, const char *outputFile) {
     printf("\n✅ File Decompressed Successfully!");
     printf("\nOutput Saved in: %s\n", outputFile);
 }
+
