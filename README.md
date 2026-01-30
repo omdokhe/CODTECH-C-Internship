@@ -14,120 +14,26 @@ OUTPUT  :
 <img width="1919" height="579" alt="Image" src="https://github.com/user-attachments/assets/34b46776-456f-4c19-b464-a1ef8afd102f" />
 DESCRIPTION :
 
-This repository contains the tasks completed during my CODTECH Internship Program. The internship focused on developing strong fundamentals in C programming through practical implementation of core computer science concepts such as file handling, linked lists, compiler design basics, and data compression techniques.
+This task focuses on implementing a complete file handling program using the C programming language. File handling is one of the most important concepts in programming because it allows applications to store data permanently. Unlike variables, which store information temporarily during program execution, files help in saving data for future use. In this task, the program demonstrates the fundamental operations that can be performed on a text file, such as creating a file, writing content into it, reading the stored content, and appending additional data without deleting existing information.
 
-All tasks were implemented in C language with a modular and structured approach. The programs were tested using real input files and executed through the GCC compiler environment. These tasks helped me improve my understanding of system-level programming and problem-solving using C.
+The program is designed in a modular way, where separate functions are used for each file operation. This makes the code more structured, readable, and easier to maintain. The user is provided with a menu-driven interface, allowing them to select the required operation interactively. When the user chooses the write option, the program opens the file in write mode and stores the entered text. The read operation displays the contents of the file on the screen. The append operation opens the file in append mode and adds new data at the end of the file, preserving the previous content. Proper error handling is included to ensure that the program behaves safely if a file cannot be opened or accessed.
 
-------------------------------------------------------------
+This task was implemented in the C programming language using standard library functions such as fopen(), fclose(), fgets(), fputs(), and fprintf(). These functions form the backbone of file input/output in C. The project was developed and executed on Windows 11 using Visual Studio Code as the editor. GCC compiler from MinGW-w64 was used to compile and run the program inside the VS Code terminal environment.
 
-Task 1: File Handling Program
+File handling programs like this are widely applicable in real-world software development. Many applications rely on file operations, such as maintaining logs in operating systems, saving user information in small-scale systems, generating reports, handling configuration files, and storing transaction data. Even large systems such as banking software, educational management systems, and hospital record systems depend heavily on file processing concepts at their core. Understanding these operations is essential for building reliable applications.
 
-The first task was to implement a file handling utility in C. The program demonstrates basic operations such as creating a file, writing data into a file, reading file contents, and appending new data to an existing file.
+This task provides strong foundational knowledge for students and beginners to understand how data is stored, retrieved, and managed in external files. It also improves practical understanding of pointers, memory buffers, and file modes in C. Overall, this task is an important step toward mastering system-level programming and building more advanced applications.
 
-File handling is an essential concept in programming because it allows applications to store and retrieve information permanently. Many real-world applications depend on file processing for managing data.
+Tools and Platform Used
 
-Applications:
-- Log file generation in software systems
-- Report generation tools
-- File-based data storage utilities
-- Text processing applications
+Language: C
+Compiler: GCC (MinGW-w64)
+Editor: Visual Studio Code
+Operating System: Windows 11
 
-------------------------------------------------------------
+Commands to Compile and Run
 
-Task 2: Linked List Implementation
+Open the VS Code terminal in the folder containing the file and use:
 
-The second task involved implementing a singly linked list with standard operations including insertion, deletion, and traversal. Linked lists are dynamic data structures that allow efficient memory usage compared to static arrays.
-
-This task strengthened my understanding of pointers, dynamic memory allocation, and data structure design.
-
-Applications:
-- Implementation of stacks and queues
-- Memory management in operating systems
-- Real-time data handling systems
-- Playlist or navigation systems
-
-------------------------------------------------------------
-
-Task 3: Lexical Analyzer (Compiler Design Basics)
-
-The third task was based on compiler design fundamentals. A simple lexical analyzer was developed to identify tokens such as keywords, identifiers, operators, numbers, and special symbols from an input C source file.
-
-Lexical analysis is the first stage of a compiler, where the source code is converted into tokens for further syntax and semantic processing.
-
-Applications:
-- Compiler and interpreter development
-- Syntax highlighting in code editors
-- Static code analysis tools
-- Programming language processing systems
-
-------------------------------------------------------------
-
-Task 4: Data Compression Tool (Run Length Encoding)
-
-The final task was to implement a basic data compression and decompression tool using the Run Length Encoding (RLE) algorithm.
-
-The tool compresses a text file by replacing repeated characters with a character-count representation. It also supports decompression to restore the original file content.
-
-Example:
-Input:  AAAABBBCCDAA
-Output: A4B3C2D1A2
-
-Applications:
-- Text compression utilities
-- Data transmission optimization
-- Storage reduction techniques
-- Fundamentals of encoding algorithms
-
-------------------------------------------------------------
-
-Tools and Technologies Used
-
-The following tools and environment were used during the internship:
-
-- Programming Language: C
-- Compiler: GCC (MinGW-w64)
-- IDE/Editor: Visual Studio Code (VS Code)
-- Operating System: Windows 11 Pro
-- Terminal: PowerShell Integrated Terminal
-- Version Control Platform: GitHub
-
-------------------------------------------------------------
-
-Repository Contents
-
-This repository includes:
-
-- task1.c : File Handling Program
-- task2.c : Linked List Implementation
-- task3.c : Lexical Analyzer Program
-- task4.c : Data Compression Tool (RLE)
-
-Supporting files:
-
-- input.txt : Input file for compression
-- compressed.txt : Output compressed file
-- decompressed.txt : Restored decompressed file
-- Internship Report PDF
-
-------------------------------------------------------------
-
-Learning Outcome
-
-Through these internship tasks, I gained practical experience in:
-
-- File operations and persistence in C
-- Dynamic data structures and pointer handling
-- Compiler design basics and tokenization
-- Implementation of compression algorithms
-- Writing structured and modular C programs
-
-------------------------------------------------------------
-
-Author
-
-Om Dokhe
-CODTECH Internship Trainee (2026)
-
-Acknowledgment
-
-I would like to thank CODTECH for providing this internship opportunity and helping me enhance my programming and problem-solving skills through these practical tasks.
+gcc task1.c -o task1
+.\task1.exe
