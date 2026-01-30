@@ -1,19 +1,3 @@
-/*
-===========================================================
- CODTECH Internship Task-1  
- File Handling Program in C
-
- Features:
- 1. Create/Write File
- 2. Append Data
- 3. Read File
- 4. Search Text in File
- 5. File Statistics (Lines, Words, Characters, Size)
- 6. Copy File Content
- 7. Delete File
-===========================================================
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -272,4 +256,5 @@ void deleteFile() {
     else
         printf("❌ Error: Unable to delete file.\n");
 }
+
 
